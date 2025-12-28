@@ -134,15 +134,7 @@ bun install
 bun start              # Start dev server
 bun android            # Run on Android
 bun ios                # Run on iOS
-bun test               # Run tests
-```
-
-`
-```
-
-```
-
-`
+bun test               # Run tests``
 
 
 
@@ -190,10 +182,12 @@ bun start
 cd ../cloud
 bun install
 bun run dev
+``
 ```
 
 These commands use the Bun package manager (preferred) but you can substitute `npm install` and `npm run dev` if Bun is not available.
-
+```
+`````
 ## Business & Entrepreneurial Value
 
 MentraOS opens opportunities for monetization and growth. A unified operating system for smart glasses can drive revenue through marketplace fees on the Mentra Store, premium subscriptions for enterprise management tools or extended cloud services, and licensing agreements for hardware manufacturers seeking ready‑made software. The modular architecture facilitates integrations with existing enterprise platforms, enabling OEMs and app developers to build scalable products and offer software‑as‑a‑service models. By lowering the barrier to entry for AR applications, MentraOS stimulates an ecosystem that can be monetized via subscriptions, upsells and consulting services.
