@@ -137,13 +137,72 @@ bun ios                # Run on iOS
 bun test               # Run tests
 ```
 
-**Cloud Backend** (`cloud/`):
+`
+```
+
+```
+
+`
+
+
+
+## Overview & Purpose
+
+MentraOS is an open source operating system for smart glasses. It provides the infrastructure for pairing, device management, data streaming and cross‑compatibility across multiple brands of wearable AR devices. By abstracting away the complexities of hardware integration, MentraOS lets developers focus on building innovative augmented‑reality applications while end users enjoy a seamless experience. The platform is fully community driven and MIT licensed.
+
+## Features & Tech Stack
+
+### Key Features
+
+- **Cross‑platform compatibility:** Run the same application on multiple smart‑glasses models without changes.
+- **Developer‑friendly SDK:** TypeScript‑based SDK accelerates development with strong typing and familiar tooling.
+- **Device control:** Access displays, microphones, cameras and speakers through unified APIs.
+- **Distribution:** Publish apps to the Mentra Store to reach users quickly.
+
+### Technology Stack
+
+| Layer | Technology |
+|------|------------|
+| Front‑end | React Native / TypeScript |
+| Mobile runtime | Node JS with Bun package manager |
+| Android / iOS | Java SDK 17 / Xcode (macOS) |
+| Cloud backend | Docker & Docker Compose |
+
+## Installation & Usage
+
+Follow these steps to get a local development environment running:
 
 ```bash
+# Clone the repository
+git clone https://github.com/g4mm4p4nd4/MentraOS.git
+cd MentraOS
+
+# Install dependencies for the mobile app and backend
+cd mobile
 bun install
-bun run dev            # Start Docker dev environment
-bun run test           # Run tests
+
+# Start the development server
+bun start
+
+`````
+
+# To run the cloud backend locally
+cd ../cloud
+bun install
+bun run dev
 ```
+
+These commands use the Bun package manager (preferred) but you can substitute `npm install` and `npm run dev` if Bun is not available.
+
+## Business & Entrepreneurial Value
+
+MentraOS opens opportunities for monetization and growth. A unified operating system for smart glasses can drive revenue through marketplace fees on the Mentra Store, premium subscriptions for enterprise management tools or extended cloud services, and licensing agreements for hardware manufacturers seeking ready‑made software. The modular architecture facilitates integrations with existing enterprise platforms, enabling OEMs and app developers to build scalable products and offer software‑as‑a‑service models. By lowering the barrier to entry for AR applications, MentraOS stimulates an ecosystem that can be monetized via subscriptions, upsells and consulting services.
+
+## Consumer Value
+
+End users benefit from a consistent and seamless smart‑glasses experience. Apps built on MentraOS are easy to install, update and use thanks to the unified store and standardized UX. Cross‑compatibility means consumers can switch between supported devices without losing access to their favourite apps. The open‑source nature of the project promotes transparency and privacy, while the growing ecosystem of apps delivers real‑world value such as hands‑free information overlays, productivity tools and entertainment. By simplifying app discovery and providing responsive support through the community, MentraOS helps consumers save time and gain a more immersive and customizable AR experience.
+ 
+
 
 For complete build instructions, testing guidelines, and code style requirements, see [CLAUDE.md](./CLAUDE.md).
 
